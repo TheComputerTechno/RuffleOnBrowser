@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flash Emulator</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <!-- Include Ruffle -->
+  <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Flash Emulator</h1>
+    <p>Select a .swf file to play it in the browser using Ruffle</p>
+    
+    <div class="upload-container">
+      <label for="flashFile" class="upload-btn">Select Flash File (.swf)</label>
+      <input type="file" id="flashFile" accept=".swf" />
+    </div>
+    
+    <div id="flash-container"></div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
